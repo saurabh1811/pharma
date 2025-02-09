@@ -1,0 +1,72 @@
+<app-header></app-header>
+
+    <style>
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-weight: bold;
+        }
+        .highlight {
+            background-color: #d63384;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .output-box {
+            background-color: #f8d7da;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .form-control {
+            text-align: center;
+        }
+    </style>
+<body class="container mt-4">
+
+    <div class="header">
+        <h1>PTR & PTS <span class="highlight">Calculator</span></h1>
+        <p>With the inclusion of GST, the rate calculations for both Pharma Stockists and Retailers have changed. 
+        We have designed a PTR and PTS calculator to help you get a general idea of how you can calculate the retail and stockist margin.</p>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-md-2">
+            <label class="form-label">MRP</label>
+            <input type="text" class="form-control" value="100">
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">GST %</label>
+            <input type="text" class="form-control" value="12">
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Retail Margin %</label>
+            <input type="text" class="form-control" value="20">
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Stockist Margin %</label>
+            <input type="text" class="form-control" value="10">
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Scheme %</label>
+            <input type="text" class="form-control" value="10">
+        </div>
+    </div>
+
+    <div class="row mt-3 g-3">
+        <div class="col-md-2">
+            <label class="form-label">PTR</label>
+            <div class="output-box">71.43</div>
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">PTS</label>
+            <div class="output-box">64.29</div>
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Net Scheme</label>
+            <div class="output-box">57.14</div>
+        </div>
+    </div>

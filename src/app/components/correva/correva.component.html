@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WNS Translate</title>
+</head>
+<app-header></app-header>
+
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title">
+
+                        <h2>Correva</h2>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row position-relative">
+
+                <div class="col-sm-6">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="fw-bold pb-2">Language:
+
+
+                            <span class="switch switch-sm">
+                                <label class="ms-2 engLabel">English</label>
+                                <input type="checkbox" class="switch" id="switch-id" checked>
+                                <label for="switch-id" class="active-language frenLabel"><span class="">French -
+                                        detected</span></label>
+                            </span>
+
+
+
+
+                        </p>
+                        <div class="d-flex">
+                            <div>
+                                Sentimental analysis:
+                            </div>
+
+                            <div class="custom-container">
+                                <img src="./assets/images/Sentiment_analysis_high.svg" class="iconSenti">
+                                Positive
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <textarea class="form-control min-100"></textarea>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="toolbarIcons">
+                                <span><i class="las la-microphone"></i></span>
+                                <span><i class="las la-undo"></i></span>
+                                <span><i class="las la-redo"></i></span>
+                                <span><i class="las la-paste"></i></span>
+                            </div>
+                            <div>
+                                <span>0 / 2000 characters</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-12 mt-2">
+                        <p class="fw-bold pb-2">Prepare your english response</p>
+                        <div>
+                            <textarea id="content" name="content">
+              <h2>Hello and Welcome</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </textarea>
+
+
+                        </div>
+                        <button class="btn text-white btn-1 float-end mt-3 magicbtn"><i class="las la-envelope"></i><img
+                                src="assets/images/star.png" class="ai" /> Generate response</button>
+
+                    </div>
+
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-sm-12 ">
+                        <p class="fw-bold" style="padding-bottom: 0.7rem;">&nbsp;</p>
+                        <div>
+                            <input class="form-control" />
+
+
+                        </div>
+                        <div class="mt-4">
+                            <textarea class="form-control" style="min-height: 335px;" disabled>Dear Ms. Smith,
+
+My name is John Doe, and I'm the Marketing Manager. I'm writing to request a meeting with you and the marketing team to discuss the upcoming product launch campaign.
+I'm available on [list your availability]. Please let me know what time works best for you.
+Thank you for your time and consideration.
+
+Sincerely,
+
+John Doe
+Marketing Manager
+                </textarea>
+                        </div>
+                        <div class="footer-control mt-3">
+
+                            <div>
+                                <button class="btn text-white btn-1 float-end "><i class="las la-copy"></i>
+                                    Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+    <app-footer></app-footer>
+
+
+
+
+    <!-- <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  var switchElement = document.getElementById("switch-id");
+
+  switchElement.addEventListener("change", function() {
+  var engLabel = document.querySelector(".engLabel");
+  var frenLabel = document.querySelector(".frenLabel");
+
+  if (this.checked) {
+    // For English
+    frenLabel.classList.add("active-language");
+    engLabel.classList.remove("active-language");
+  } else {
+    // For French
+    engLabel.classList.add("active-language");
+    frenLabel.classList.remove("active-language");
+  }
+});
+});
+$R('#content', { focus: false });
+</script> -->
+
+
+
+
+</body>
+
+</html>

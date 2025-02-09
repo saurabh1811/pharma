@@ -1,0 +1,7 @@
+services:
+  SYWHR:
+    build: .
+   
+    image: test:v1
+    container_name: test_container  
+
