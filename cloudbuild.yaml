@@ -1,10 +1,10 @@
 steps:
 # build the container image
 - name: "gcr.io/cloud-builders/docker"
-args: ["build", "-t", "gcr.io/jump-the-que/ewallet-3", "."]
+args: ["build", "-t", "gcr.io/jump-the-que/pharma", "."]
 # push the container image to Container Registry
 - name: "gcr.io/cloud-builders/docker"
-args: ["push", "gcr.io/jump-the-que/ewallet-3"]
+args: ["push", "gcr.io/jump-the-que/pharma"]
 # Deploy container image to Cloud Run
 - name: "gcr.io/cloud-builders/gcloud"
 args:
@@ -15,7 +15,7 @@ args:
 "--allow-unauthenticated",
 "jump-the-que",
 "--image",
-"gcr.io/jump-the-que/ewallet-3",
+"gcr.io/jump-the-que/pharma",
 "--region",
 "us-central1",
 "--platform",
@@ -24,4 +24,4 @@ args:
 "128Mi"
 ]
 images:
-- gcr.io/jump-the-que/ewallet-3
+- gcr.io/jump-the-que/pharma
