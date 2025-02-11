@@ -19,7 +19,7 @@ export class HomeComponent {
   }
   addItemToCart(item: any) {
     this.cartService.addToCart(item);
-    this.router.navigate(['/cart-details'])
+    this.router.navigate(['/product/'+item.id])
   
   }
 }

@@ -15,6 +15,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { PtrPtsCalculatorComponent } from './components/ptr-pts-calculator/ptr-pts-calculator.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CartDetailsComponent } from './components/cart-details/cart-details.com
     BlogComponent,
     ContactComponent,
     PtrPtsCalculatorComponent,
-    CartDetailsComponent
+    CartDetailsComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

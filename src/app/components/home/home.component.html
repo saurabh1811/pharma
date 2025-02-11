@@ -41,9 +41,9 @@
                 <img [src]="data.image" class="card-img-top" style="height:254px;" alt="Product Image">
                 <div class="card-body text-center">
                   <h5 class="card-title">{{ data.name }}</h5>
-                  <p class="card-text">{{ data.price | currency }}</p>
-                  <button class="btn btn-primary" (click)="addItemToCart(data)">
-                    <i class="fas fa-cart-plus"></i> Add to Cart
+                  <p class="card-text">Rs {{ data.price  }}</p>
+                  <button class="btn btn-primary" style="width:100px" (click)="addItemToCart(data)">
+                    View
                   </button>
                 </div>
             </div><!-- End Gallery Item -->

@@ -9,6 +9,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PtrPtsCalculatorComponent } from './components/ptr-pts-calculator/ptr-pts-calculator.component';
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'ptr-pts-calculator', component: PtrPtsCalculatorComponent },
   { path: 'cart-details', component: CartDetailsComponent },
+  { path: 'product/:id', component: ProductDetailsComponent },
   { path: '', component: HomeComponent },
   // Add other routes here
 ];
