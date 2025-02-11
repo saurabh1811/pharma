@@ -1,0 +1,26 @@
+ [
+    {
+        "image": "../../../assets/images/1.jpeg",
+        "name": "blue",
+        "price": 20,
+        "id":1
+    },
+    {
+        "image": "../../../assets/images/2.jpeg",
+        "name": "blue",
+        "price": 20,
+        "id":2
+    },
+    {
+        "image": "../../../assets/images/3.jpeg",
+        "name": "blue",
+        "price": 20,
+        "id":3
+    },
+    {
+        "image": "../../../assets/images/4.jpeg",
+        "name": "blue",
+        "price": 20,
+        "id":4
+    }
+]
