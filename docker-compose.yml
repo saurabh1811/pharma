@@ -2,6 +2,6 @@ services:
   SYWHR:
     build: .
    
-    image: pharma:v1
-    container_name: pharma_container  
+    image: pharma1:v1
+    container_name: pharma1_container  
 
