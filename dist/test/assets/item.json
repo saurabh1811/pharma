@@ -22,5 +22,30 @@
         "name": "acebrophylline",
         "price": 20,
         "id":4
+    },
+   
+    {
+        "image": "../../../assets/images/6.jpeg",
+        "name": "MightyBone K-2",
+        "price": 20,
+        "id":6
+    },
+    {
+        "image": "../../../assets/images/7.jpeg",
+        "name": "Payanerv-LC",
+        "price": 20,
+        "id":7
+    },
+    {
+        "image": "../../../assets/images/8.jpeg",
+        "name": "Payadiol-300",
+        "price": 20,
+        "id":8
+    },
+    {
+        "image": "../../../assets/images/9.jpeg",
+        "name": "Payagesic-SP",
+        "price": 20,
+        "id":9
     }
 ]
