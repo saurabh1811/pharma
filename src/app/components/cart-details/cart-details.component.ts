@@ -7,23 +7,31 @@ import { CartService } from 'src/app/service/cart.service';
   styleUrls: ['./cart-details.component.css']
 })
 export class CartDetailsComponent {
+  
   cartItems: any[] = [];
 
   constructor(private cartService: CartService) {}
 
   ngOnInit() {
-    this.cartItems = this.cartService.getCart();
-    console.log(this.cartItems)
+    
+    this.getcartdetails();
   }
 
   removeItem(index: number) {
     this.cartService.removeFromCart(index);
     this.cartItems = this.cartService.getCart();
   }
+  
 
   clearCart() {
     this.cartService.clearCart();
     this.cartItems = [];
   }
+  getcartdetails(){
+    this.cartItems = this.cartService.getCart();
+    console.log(this.cartItems)
+
+  }
+
 
 }

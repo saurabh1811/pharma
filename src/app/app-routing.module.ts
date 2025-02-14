@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { CorrevaComponent } from './components/correva/correva.component';
 import { AboutComponent } from './components/about/about.component';
@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'pharma-franchise-company-india', component: PharmaFranchiseCompanyIndiaComponent },
   { path: 'product', component: ProductComponent },
   { path: 'blog', component: BlogComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'ptr-pts-calculator', component: PtrPtsCalculatorComponent },
   { path: 'cart-details', component: CartDetailsComponent },
   { path: 'product/:id', component: ProductDetailsComponent },
@@ -24,8 +24,12 @@ const routes: Routes = [
   // Add other routes here
 ];
 
+const routerOptions: ExtraOptions = {
+  anchorScrolling:'enabled',
+  scrollPositionRestoration: 'enabled'
+}
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled'})],
+  imports: [RouterModule.forRoot(routes,routerOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -16,6 +16,8 @@ import { PtrPtsCalculatorComponent } from './components/ptr-pts-calculator/ptr-p
 import { HttpClientModule } from '@angular/common/http';
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ProductDetailsComponent } from './components/product-details/product-de
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

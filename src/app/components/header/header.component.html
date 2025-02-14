@@ -26,19 +26,23 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#home" [class.active]="activehash ==='#home'">Home<br></a></li>
-            <li><a href="#product" [class.active]="activehash ==='#product'">Product</a></li>
-            <li><a href="#about" [class.active]="activehash ==='#about'">About</a></li>
-            <li><a href="#services" [class.active]="activehash ==='#services'">Our Vision</a></li>
-            <li><a href="#testimonials" [class.active]="activehash ==='#testimonials'">Testimonials</a></li>           
-            <li><a href="#contact" [class.active]="activehash ==='#contact'">Contact</a></li>
+            <li><a [routerLink]="['/home']" fragment="home" [class.active]="activehash ==='home'">Home<br></a></li>
+            <li><a [routerLink]="['/home']" fragment="product" [class.active]="activehash==='product'">Product</a></li>
+            <li><a [routerLink]="['/home']" fragment="about" [class.active]="activehash==='about'">About</a></li>
+            <li><a [routerLink]="['/home']" fragment="vision" [class.active]="activehash==='vision'">Our Vision</a></li>
+            <li><a [routerLink]="['/home']" fragment="testimonials" [class.active]="activehash==='testimonials'">Testimonials</a></li>           
+            <li><a [routerLink]="['/home']" fragment="contact" [class.active]="activehash==='contact'" >Contact</a></li>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            <li class="nav-item">
+              <a class="nav-link position-relative pointer" (click)="cartDetails()">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  {{ cartCount }}
+                </span>
+              </a>
+            </li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
-
       </div>
-
     </div>
-
   </header>

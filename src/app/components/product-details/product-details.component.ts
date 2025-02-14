@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CartService } from 'src/app/service/cart.service';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 
 
@@ -43,7 +44,8 @@ export class ProductDetailsComponent {
     private route: ActivatedRoute,
     private cartService: CartService,
     private httpClient: HttpClient,
-    private router:Router
+    private router:Router,
+    private toastr: ToastrService
 
   ){
 
@@ -51,16 +53,23 @@ export class ProductDetailsComponent {
   ngOnInit():void{
     let id =this.route.snapshot.paramMap.get('id') as string
     console.log(id)
-    this.getProductDetails(id)
+    this.getProductDetails(parseInt(id))
+    window.scrollTo(0, 0);
   }
-  getProductDetails(id:string){
+  getProductDetails(id:number){
     
       this.selectedItem = this.data[0];
-      console.log(this.selectedItem)
+      let data =this.cartService.getItemById(id).subscribe(data =>{
+        this.selectedItem = data
+      });
+      console.log(data)
+      
   }
   addItemToCart(item: any) {
-    // this.cartService.addToCart(item);
-    this.router.navigate(['/cart-details'])
+    console.log(this.toastr)
+    this.toastr.success('Item Added to Cart!');
+    this.cartService.addToCart(item);
+    // this.router.navigate(['/cart-details'])
   
   }
 

@@ -11,17 +11,20 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HomeComponent {
   item:any;
-  constructor(private cartService: CartService,private httpClient: HttpClient,private router:Router) {
+  constructor(private cartService: CartService,private httpClient: HttpClient,private router:Router,private route:ActivatedRoute) {
     this.httpClient.get<any>("../../../assets/item.json").subscribe((data)=>
       this.item = data
     )
+    
     // this.data = data
   }
+
   addItemToCart(item: any) {
-    this.cartService.addToCart(item);
+    // this.cartService.addToCart(item);
     this.router.navigate(['/product/'+item.id])
   
   }
+  
 }
 
 

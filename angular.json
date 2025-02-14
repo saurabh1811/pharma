@@ -26,6 +26,7 @@
             ],
             "styles": [
               "src/styles.css"
+
             ],
             "scripts": [
               "src/assets/js/jquery-3.7.1.min.js" ,
@@ -34,8 +35,7 @@
               "src/assets/js/swiper-bundle.min.js",
               "src/assets/js/bootstrap.bundle.js",
               "src/assets/js/bootstrap.bundle.min.js",
-              "src/assets/js/bootstrap.js",
-              "src/assets/js/main.js"
+              "src/assets/js/bootstrap.js"
             ]
           },
           "configurations": {
