@@ -29,13 +29,7 @@
 
             ],
             "scripts": [
-              "src/assets/js/jquery-3.7.1.min.js" ,
-              "src/assets/js/fileUpload.js",
-              "src/assets/js/redactor.min.js",
-              "src/assets/js/swiper-bundle.min.js",
-              "src/assets/js/bootstrap.bundle.js",
-              "src/assets/js/bootstrap.bundle.min.js",
-              "src/assets/js/bootstrap.js"
+             
             ]
           },
           "configurations": {
@@ -98,7 +92,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+           
+            ]
           }
         }
       }

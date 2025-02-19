@@ -1,0 +1,106 @@
+
+    <app-header></app-header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero-section {
+            background: url('../../../assets/images/carrier.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .job-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .job-card:hover {
+            transform: translateY(-5px);
+        }
+        .benefits {
+            background: #f8f9fa;
+            padding: 50px 20px;
+        }
+        .benefit-icon {
+            font-size: 40px;
+            color: #007bff;
+        }
+        .apply-section {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+    </style>
+
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <h1>Join Our Team</h1>
+        <p>We’re looking for talented people to shape the future!</p>
+        <a style="background-color: #007bff;" class="btn btn-light btn-lg">View Open Positions</a>
+    </header>
+
+    <!-- Job Listings -->
+    <section class="container my-5" id="jobs">
+        <h2 class="text-center mb-4">Current Job Openings</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card job-card p-3">
+                    <h5>Software Engineer</h5>
+                    <p><strong>Location:</strong> New York, USA</p>
+                    <p><strong>Type:</strong> Full-time</p>
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card job-card p-3">
+                    <h5>Marketing Manager</h5>
+                    <p><strong>Location:</strong> Remote</p>
+                    <p><strong>Type:</strong> Full-time</p>
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card job-card p-3">
+                    <h5>UI/UX Designer</h5>
+                    <p><strong>Location:</strong> San Francisco, USA</p>
+                    <p><strong>Type:</strong> Part-time</p>
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Benefits -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="text-center mb-4">Why Work With Us?</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="benefit-icon bi bi-heart"></i>
+                    <h4>Great Culture</h4>
+                    <p>A collaborative and supportive work environment.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="benefit-icon bi bi-cash-stack"></i>
+                    <h4>Competitive Pay</h4>
+                    <p>We offer competitive salaries with great perks.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="benefit-icon bi bi-globe"></i>
+                    <h4>Remote Flexibility</h4>
+                    <p>Work from anywhere with our flexible policy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="apply-section">
+        <h2>Ready to Make an Impact?</h2>
+        <p>Join our passionate team and build the future with us!</p>
+        <a href="#" class="btn btn-light btn-lg">Apply Today</a>
+    </section>
+
+    <!-- Bootstrap JS -->
+

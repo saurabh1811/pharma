@@ -1,3 +1,6 @@
 .pointer{
     cursor: pointer;
 }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color:#1977cc !important
+}

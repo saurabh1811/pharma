@@ -1,48 +1,74 @@
 <header id="header" class="header sticky-top">
-
-    <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@payamapharma.com">info@payamapharma.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 99361 13635 +91 96508 19912</span></i>
-        </div>
-        <div class="social-links d-none d-md-flex align-items-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-    </div><!-- End Top Bar -->
-
-    <div class="branding d-flex align-items-center">
-
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/images/logo.png" alt="">
-          <!-- <h1 class="sitename">Payama</h1> -->
-        </a>
-
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a [routerLink]="['/home']" fragment="home" [class.active]="activehash ==='home'">Home<br></a></li>
-            <li><a [routerLink]="['/home']" fragment="product" [class.active]="activehash==='product'">Product</a></li>
-            <li><a [routerLink]="['/home']" fragment="about" [class.active]="activehash==='about'">About</a></li>
-            <li><a [routerLink]="['/home']" fragment="vision" [class.active]="activehash==='vision'">Our Vision</a></li>
-            <li><a [routerLink]="['/home']" fragment="testimonials" [class.active]="activehash==='testimonials'">Testimonials</a></li>           
-            <li><a [routerLink]="['/home']" fragment="contact" [class.active]="activehash==='contact'" >Contact</a></li>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            <li class="nav-item">
-              <a class="nav-link position-relative pointer" (click)="cartDetails()">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ cartCount }}
-                </span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+<div class="topbar d-flex align-items-center">
+  <div class="container d-flex justify-content-center justify-content-md-between">
+    <div class="contact-info d-flex align-items-center">
+      <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@payamapharma.com">info@payamapharma.com</a></i>
+      <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 99361 13635 +91 96508 19912</span></i>
     </div>
-  </header>
+    <div class="social-links d-none d-md-flex align-items-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</div><!-- End Top Bar -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+   
+  <div class="container position-relative d-flex align-items-center justify-content-between">
+    <!-- Navbar brand -->
+    <a href="index.html" class="logo d-flex align-items-center me-auto" style="padding-right: 430px;padding-left: 50px;">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <img src="assets/images/logo.png" alt="">
+      <!-- <h1 class="sitename">Payama</h1> -->
+    </a>
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="basicNavbar.toggle()"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div
+      class="collapse navbar-collapse"
+      id="navbarSupportedContent"
+      mdbCollapse
+      #basicNavbar="mdbCollapse"
+    >
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/home']" fragment="home" [class.active]="activehash ==='home'">Home<br></a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/home']" fragment="product" [class.active]="activehash==='product'">Product</a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/home']" fragment="about" [class.active]="activehash==='about'">About</a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/home']" fragment="vision" [class.active]="activehash==='vision'">OurVision</a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/home']" fragment="testimonials" [class.active]="activehash==='testimonials'">Testimonials</a></li>
+        <li><a class="nav-link" [routerLink]="['/carrier']"  [class.active]="activehash==='carrier'" >Carrier</a></li>           
+        <li><a class="nav-link" [routerLink]="['/home']" fragment="contact" [class.active]="activehash==='contact'" >Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link position-relative pointer" (click)="cartDetails()">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              {{ cartCount }}
+            </span>
+          </a>
+        </li>
+      </ul>
+      <!-- Left links -->
+
+    
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+ </header>

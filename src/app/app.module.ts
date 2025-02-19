@@ -18,6 +18,10 @@ import { CartDetailsComponent } from './components/cart-details/cart-details.com
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
+import { CarrierComponent } from './components/carrier/carrier.component';
+
+
 
 @NgModule({
   declarations: [
@@ -33,13 +37,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactComponent,
     PtrPtsCalculatorComponent,
     CartDetailsComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CarrierComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MdbCollapseModule,
     ToastrModule.forRoot(),
   ],
   providers: [],

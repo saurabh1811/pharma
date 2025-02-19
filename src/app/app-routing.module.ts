@@ -10,6 +10,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { PtrPtsCalculatorComponent } from './components/ptr-pts-calculator/ptr-pts-calculator.component';
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { CarrierComponent } from './components/carrier/carrier.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'ptr-pts-calculator', component: PtrPtsCalculatorComponent },
   { path: 'cart-details', component: CartDetailsComponent },
   { path: 'product/:id', component: ProductDetailsComponent },
+  { path: 'carrier', component: CarrierComponent },
   { path: '', component: HomeComponent },
   // Add other routes here
 ];

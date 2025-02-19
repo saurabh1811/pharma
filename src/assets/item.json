@@ -3,49 +3,57 @@
         "image": "../../../assets/images/1.jpeg",
         "name": "Levocetirizine Dihydrochloride",
         "price": 20,
-        "id":1
+        "id":1,
+        "description":"Levocetirizine is used to relieve runny nose; sneezing; and redness, itching, and tearing of the eyes caused by hay fever, seasonal allergies, and allergies to other substances such as dust mites, animal dander, and mold. It is also used to treat symptoms of hives, including itching and rash."
     },
     {
         "image": "../../../assets/images/2.jpeg",
-        "name": "azithromycin",
+        "name": "azithromycin 500mg",
         "price": 20,
-        "id":2
+        "id":2,
+        "description":"Broad-spectrum macrolide antibiotic with bacteriostatic activity against Gram-positive & Gram-negative bacteria Shows faster resolution of sinusitis than amoxicillin/clavulanate Improves the level of pulmonary function in COPD patients Decreases frequency of acute exacerbations of COPD"
     },
     {
         "image": "../../../assets/images/3.jpeg",
         "name": "rabeprazole",
         "price": 20,
-        "id":3
+        "id":3,
+        "description":"Rabeprazole is used to treat duodenal ulcers, gastroesophageal reflux disease (GERD), and Zollinger-Ellison syndrome, a condition where the stomach produces too much acid. It may also be used together with antibiotics (eg, amoxicillin, clarithromycin) to treat ulcers associated with infections caused by the H"
     },
     {
         "image": "../../../assets/images/4.jpeg",
         "name": "acebrophylline",
         "price": 20,
-        "id":4
+        "id":4,
+        "description":"Acebrophylline is used to prevent and treat symptoms of asthma and chronic obstructive pulmonary disease (COPD). Asthma is a chronic (long-term) respiratory condition in which airways narrow, swell, and produce extra mucus, leading to difficulty in breathing."
     },
    
     {
         "image": "../../../assets/images/6.jpeg",
         "name": "MightyBone K-2",
         "price": 20,
-        "id":6
+        "id":6,
+        "description":"Bon K2 Tablet is used to treat low blood calcium levels and various associated conditions caused by low calcium levels in the body, such as osteoporosis (weak and brittle bones), osteomalacia/rickets (weak bones), hypoparathyroidism (low levels of parathyroid hormone), and tetany (a muscle disease with low blood"
     },
     {
         "image": "../../../assets/images/7.jpeg",
         "name": "Payanerv-LC",
         "price": 20,
-        "id":7
+        "id":7,
+        "description":"LC 5mg Tablet belongs to a group of medicines called antihistamines. It is used to treat various allergic conditions such as hay fever, conjunctivitis, some skin reactions such as eczema, hives, and reactions to bites and stings. It also relieves watery eyes, runny nose, sneezing, and itching."
     },
     {
         "image": "../../../assets/images/8.jpeg",
         "name": "Payadiol-300",
         "price": 20,
-        "id":8
+        "id":8,
+        "description":"300 Tablet is used to dissolve certain gallstones and prevent them from forming. It is also used to treat a type of liver disease called primary biliary cirrhosis. It helps break down the cholesterol that has converted into stones in your gallbladder thereby dissolving the stones"
     },
     {
         "image": "../../../assets/images/9.jpeg",
         "name": "Payagesic-SP",
         "price": 20,
-        "id":9
+        "id":9,
+        "description":"Pyrigesic Sp Tablet is used for relieving pain and inflammation of muscles, joints and bones in conditions such as arthritis, spondylitis and injuries. It is also used after operations and surgeries for relieving pain, inflammation and swelling."
     }
 ]
