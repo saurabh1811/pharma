@@ -8,21 +8,21 @@
     },
     {
         "image": "../../../assets/images/2.jpeg",
-        "name": "azithromycin 500mg",
+        "name": "Azithromycin 500mg",
         "price": 20,
         "id":2,
         "description":"Broad-spectrum macrolide antibiotic with bacteriostatic activity against Gram-positive & Gram-negative bacteria Shows faster resolution of sinusitis than amoxicillin/clavulanate Improves the level of pulmonary function in COPD patients Decreases frequency of acute exacerbations of COPD"
     },
     {
         "image": "../../../assets/images/3.jpeg",
-        "name": "rabeprazole",
+        "name": "Rabeprazole",
         "price": 20,
         "id":3,
         "description":"Rabeprazole is used to treat duodenal ulcers, gastroesophageal reflux disease (GERD), and Zollinger-Ellison syndrome, a condition where the stomach produces too much acid. It may also be used together with antibiotics (eg, amoxicillin, clarithromycin) to treat ulcers associated with infections caused by the H"
     },
     {
         "image": "../../../assets/images/4.jpeg",
-        "name": "acebrophylline",
+        "name": "Acebrophylline",
         "price": 20,
         "id":4,
         "description":"Acebrophylline is used to prevent and treat symptoms of asthma and chronic obstructive pulmonary disease (COPD). Asthma is a chronic (long-term) respiratory condition in which airways narrow, swell, and produce extra mucus, leading to difficulty in breathing."

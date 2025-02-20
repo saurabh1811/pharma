@@ -1,203 +1,126 @@
 <app-header></app-header>
-
 <main class="main">
-
-    <!-- Hero Section -->
-    <section id="home" class="hero section light-background">
-
-      <img src="../../../assets/images/bg.jpeg" alt="" >
-
-      <div class="container position-relative">
-
-        <div class="welcome position-relative"  >
-          <h2 style="color:#FFFF">Welcome to Payama Pharmaceuticals</h2>
-          <h2 style="color:#FFFF">Providing Comprehensive pharmaceuticals Services</h2>
-          <h2 style="color:#FFFF">We're providing wide Range of medical </h2>
-          <h2 style="color:#FFFF"> and pharmaceuticals products</h2>
-        </div><!-- End Welcome -->
-       
-
-        <a class="button cta-btn d-none d-sm-block" href="#">Download Price List</a>
-
-      </div>
-
-    </section><!-- /Hero Section -->
-    
-    <!-- Gallery Section -->
-    <section id="product" class="gallery section">
-
-        <!-- Section Title -->
-       
-        <div class="container-fluid" >
-          <div class="container section-title" >
-            <h2 class="fst-italic">Explore our Robust Range of Products!!</h2>
-            <h5 class="fst-italic">Discover a wide array of Pharmaceutical Products certified with ISO, WHO- GMP & GLP standards, meticulously manufactured in state-of-the-art facilities.</h5>
-          </div><!-- End Section Title -->
-  
-          <div class="row g-0">
-  
-            <div class="col-lg-3 col-md-3" *ngFor="let data of item" >
-              <div class="card" (click)="addItemToCart(data)">
-                <img [src]="data.image" class="card-img-top" style="height:254px;" alt="Product Image">
-                <div class="card-body text-center">
-                  <h5 class="card-title">{{ data.name }}</h5>
-                  <!-- <p class="card-text">Rs {{ data.price  }}</p> -->
-                 
-                </div>
-            </div><!-- End Gallery Item -->
-  
-          </div>
-  
-        </div>
-        </div>
-  
-      </section><!-- /Gallery Section -->
-  
-    
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container">
-
-        <div class="row gy-4 gx-5">
-
-          <div class="col-lg-6 position-relative align-self-start" >
-            <img src="../../../assets/images/about.jpg" class="img-fluid" alt="">
-            <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a> -->
-          </div>
-
-          <div class="col-lg-6 content">
-            <h3>Welcome to Payama pharmaceuticals, where expertise meets compassion.</h3>
-            <p class="fst-italic">
-               As Payama in India, we are committed to delivering innovative solutions that empower every age group on their journey to good health. With a deep understanding of the challenges you face, our dedicated team of experts is here to provide the support and care you deserve. At Payama pharmaceuticals, we believe in making a difference, one life at a time.
-            </p>
-         
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
- 
-    <!-- Services Section -->
-    <section id="vision" class="services section">
-
-      <!-- Section Title -->
+  <!-- Hero Section -->
+  <section class="hero section light-background" id="home">
+    <img alt="" src="../../../assets/images/bg.jpeg">
+    <div class="container position-relative">
+      <div class="welcome position-relative">
+        <h2 style="color:#FFFF">Welcome to Payama Pharmaceuticals</h2>
+        <h2 style="color:#FFFF">Providing Comprehensive pharmaceuticals Services</h2>
+        <h2 style="color:#FFFF">We're providing wide Range of medical</h2>
+        <h2 style="color:#FFFF">and pharmaceuticals products</h2>
+      </div><!-- End Welcome -->
+      <!-- <a class="button cta-btn d-none d-sm-block" href="#">Download Price List</a> -->
+    </div>
+  </section><!-- /Hero Section -->
+  <!-- Gallery Section -->
+  <section class="product section" id="product">
+    <!-- Section Title -->
+    <div class="container-fluid">
       <div class="container section-title">
-        <h2>Core Value</h2>
+        <h2 class="fst-italic">Explore our Robust Range of Products!!</h2>
+        <h5 class="fst-italic">Discover a wide array of Pharmaceutical Products certified with ISO, WHO- GMP & GLP standards, meticulously manufactured in state-of-the-art facilities.</h5>
       </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" >
-            <div class="service-item  position-relative">
-             
-              <a href="#" class="stretched-link">
-                <h3>Our Mission</h3>
-              </a>
-              <p class="fst-italic">
-                Our mission is to deliver innovative and affordable pharmaceutical solutions that enhance the quality of life for patients. We are committed to empowering pharmaceuticals professionals by providing reliable products and fostering a culture of excellence.</p>
+      <div class="row g-0">
+        <div class="col-lg-3 col-md-3" *ngFor="let data of item">
+          <div class="card" (click)="addItemToCart(data)">
+            <img  [src]="data.image" alt="Product Image" class="card-img-top" style="height:254px;">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{ data.name }}</h5><!-- <p class="card-text">Rs {{ data.price  }}</p> -->
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" >
-            <div class="service-item position-relative">
-             
-              <a href="#" class="stretched-link">
-                <h3>Our Vision</h3>
-              </a>
-              <p class="fst-italic">
-                Our vision is to become a trusted global leader in the pharmaceutical industry, setting benchmarks for innovation and quality. We aim to create a healthier future by making advanced pharmaceuticals solutions accessible to people worldwide.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" >
-            <div class="service-item position-relative">
-              
-              <a href="#" class="stretched-link">
-                <h3>Core Value</h3>
-              </a>
-              <p class="fst-italic">
-                Our core values reflect our commitment to innovation, quality, and integrity in every endeavor. We prioritize groundbreaking solutions, adhere to the highest ethical standards, and ensure a patient-first approach in all operations.</p>
-            </div>
-          </div><!-- End Service Item -->
+          </div><!-- End Gallery Item -->
         </div>
-
       </div>
-
-    </section><!-- /Services Section -->
-    
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
-
-        <!-- Section Title -->
-        <div class="container section-title" >
-          <h2>Our New Arrivals </h2>
-          <p>Introducing our latest additions to the pharmaceutical lineup.
-          </p>
-        </div><!-- End Section Title -->
-  
-        <div class="container-fluid" >
-  
-          <div class="row g-0">
-  
-            <div class="col-lg-3 col-md-4">
-              <div class="gallery-item">
-                <a href="../../../assets//images/1.jpeg" style="height:267px" class="glightbox" data-gallery="images-gallery">
-                  <img src="../../../assets//images/1.jpeg" style="height:267px" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div><!-- End Gallery Item -->
-  
-            <div class="col-lg-3 col-md-4">
-              <div class="gallery-item">
-                <a href="../../../assets//images/2.jpeg" class="glightbox" data-gallery="images-gallery">
-                  <img src="../../../assets//images/2.jpeg" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div><!-- End Gallery Item -->
-  
-            <div class="col-lg-3 col-md-4">
-              <div class="gallery-item">
-                <a href="../../../assets//images/3.jpeg" style="height:267px" class="glightbox" data-gallery="images-gallery">
-                  <img src="../../../assets//images/3.jpeg" style="height:267px" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div><!-- End Gallery Item -->
-  
-            <div class="col-lg-3 col-md-4">
-              <div class="gallery-item">
-                <a href="../../../assets//images/4.jpeg" style="height:267px" class="glightbox" data-gallery="images-gallery">
-                  <img src="../../../assets//images/4.jpeg" style="height:267px"  alt="" class="img-fluid">
-                </a>
-              </div>
-            </div><!-- End Gallery Item -->
-  
-          </div>
-  
+    </div>
+  </section><!-- /Gallery Section -->
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="row gy-4 gx-5">
+        <div class="col-lg-6 position-relative align-self-start">
+          <img alt="" class="img-fluid" src="../../../assets/images/about.jpg"> <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a> -->
         </div>
-  
-      </section><!-- /Gallery Section -->
-      <section id="testimonials" class="testimonials section">
-
-        <div class="container">
-  
-          <div class="row align-items-center">
-  
-            <div class="col-lg-5 info" >
-              <h3>Testimonials</h3>
-              <p>
-                What Our PCD Franchise Owners Says About Us
-              </p>
-            </div>
-  
-            <div class="col-lg-7" >
-  
-              <div class="swiper init-swiper">
-                <script type="application/json" class="swiper-config">
+        <div class="col-lg-6 content">
+          <h3>Welcome to Payama pharmaceuticals, where expertise meets compassion.</h3>
+          <p class="fst-italic">As Payama in India, we are committed to delivering innovative solutions that empower every age group on their journey to good health. With a deep understanding of the challenges you face, our dedicated team of experts is here to provide the support and care you deserve. At Payama pharmaceuticals, we believe in making a difference, one life at a time.</p>
+        </div>
+      </div>
+    </div>
+  </section><!-- /About Section -->
+  <!-- Services Section -->
+  <section class="vision section" id="vision">
+    <!-- Section Title -->
+    <div class="container section-title">
+      <h2>Core Value</h2>
+    </div><!-- End Section Title -->
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item position-relative">
+            <a class="stretched-link" href="#">
+            <h3>Our Mission</h3></a>
+            <p class="fst-italic">Our mission is to deliver innovative and affordable pharmaceutical solutions that enhance the quality of life for patients. We are committed to empowering pharmaceuticals professionals by providing reliable products and fostering a culture of excellence.</p>
+          </div>
+        </div><!-- End Service Item -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item position-relative">
+            <a class="stretched-link" href="#">
+            <h3>Our Vision</h3></a>
+            <p class="fst-italic">Our vision is to become a trusted global leader in the pharmaceutical industry, setting benchmarks for innovation and quality. We aim to create a healthier future by making advanced pharmaceuticals solutions accessible to people worldwide.</p>
+          </div>
+        </div><!-- End Service Item -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item position-relative">
+            <a class="stretched-link" href="#">
+            <h3>Core Value</h3></a>
+            <p class="fst-italic">Our core values reflect our commitment to innovation, quality, and integrity in every endeavor. We prioritize groundbreaking solutions, adhere to the highest ethical standards, and ensure a patient-first approach in all operations.</p>
+          </div>
+        </div><!-- End Service Item -->
+      </div>
+    </div>
+  </section><!-- /Services Section -->
+  <!-- Gallery Section -->
+  <section class="gallery section" id="gallery">
+    <!-- Section Title -->
+    <div class="container section-title">
+      <h2>Our New Arrivals</h2>
+      <p>Introducing our latest additions to the pharmaceutical lineup.</p>
+    </div><!-- End Section Title -->
+    <div class="container-fluid">
+      <div class="row g-0">
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a class="glightbox" data-gallery="images-gallery" href="../../../assets//images/1.jpeg" style="height:267px"><img alt="" class="img-fluid" src="../../../assets//images/1.jpeg" style="height:267px"></a>
+          </div>
+        </div><!-- End Gallery Item -->
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a class="glightbox" data-gallery="images-gallery" href="../../../assets//images/2.jpeg"><img alt="" class="img-fluid" src="../../../assets//images/2.jpeg"></a>
+          </div>
+        </div><!-- End Gallery Item -->
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a class="glightbox" data-gallery="images-gallery" href="../../../assets//images/3.jpeg" style="height:267px"><img alt="" class="img-fluid" src="../../../assets//images/3.jpeg" style="height:267px"></a>
+          </div>
+        </div><!-- End Gallery Item -->
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a class="glightbox" data-gallery="images-gallery" href="../../../assets//images/4.jpeg" style="height:267px"><img alt="" class="img-fluid" src="../../../assets//images/4.jpeg" style="height:267px"></a>
+          </div>
+        </div><!-- End Gallery Item -->
+      </div>
+    </div>
+  </section><!-- /Gallery Section -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 info">
+          <h3>Testimonials</h3>
+          <p>What Our PCD Franchise Owners Says About Us</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="swiper init-swiper">
+            <script class="swiper-config" type="application/json">
                   {
                     "loop": true,
                     "speed": 600,
@@ -211,236 +134,147 @@
                       "clickable": true
                     }
                   }
-                </script>
-                
-                <div class="swiper-wrapper">
-                  
-  
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="d-flex">
-                        <img src="assets/images/rahul_sha.png" class="testimonial-img flex-shrink-0" alt="">
-                        <div>
-                          <h3>Rahul Sharma</h3>
-                          <h4>HealthPlus Pharma</h4>
-                          <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                          </div>
-                        </div>
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="d-flex">
+                    <img alt="" class="testimonial-img flex-shrink-0" src="assets/images/rahul_sha.png">
+                    <div>
+                      <h3>Rahul Sharma</h3>
+                      <h4>HealthPlus Pharma</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>                            Being a franchise owner with this pharma company has been a fantastic experience. Their support system is outstanding, providing us with everything from marketing materials to timely product supplies. They genuinely care about their partners and are always ready to assist with any challenges. It's a pleasure working with a company that values collaboration and growth.                                                </span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
                     </div>
-                  </div><!-- End testimonial item -->
-  
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="d-flex">
-                        <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt="">
-                        <div>
-                          <h3>Sara Wilsson</h3>
-                          <h4>Designer</h4>
-                          <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div><!-- End testimonial item -->
-  
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="d-flex">
-                        <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0" alt="">
-                        <div>
-                          <h3>Jena Karlis</h3>
-                          <h4>Store Owner</h4>
-                          <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div><!-- End testimonial item -->
-  
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="d-flex">
-                        <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0" alt="">
-                        <div>
-                          <h3>Matt Brandon</h3>
-                          <h4>Freelancer</h4>
-                          <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div><!-- End testimonial item -->
-  
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="d-flex">
-                        <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0" alt="">
-                        <div>
-                          <h3>John Larson</h3>
-                          <h4>Entrepreneur</h4>
-                          <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div><!-- End testimonial item -->
-  
+                  </div>
+                  <p><i class="bi bi-quote quote-icon-left"></i> <span>Being a franchise owner with this pharma company has been a fantastic experience. Their support system is outstanding, providing us with everything from marketing materials to timely product supplies. They genuinely care about their partners and are always ready to assist with any challenges. It's a pleasure working with a company that values collaboration and growth.</span> <i class="bi bi-quote quote-icon-right"></i></p>
                 </div>
-                <div class="swiper-pagination"></div>
-              </div>
-  
+              </div><!-- End testimonial item -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="d-flex">
+                    <img alt="" class="testimonial-img flex-shrink-0" src="assets/img/testimonials/testimonials-2.jpg">
+                    <div>
+                      <h3>Sara Wilsson</h3>
+                      <h4>Designer</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p><i class="bi bi-quote quote-icon-left"></i> <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span> <i class="bi bi-quote quote-icon-right"></i></p>
+                </div>
+              </div><!-- End testimonial item -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="d-flex">
+                    <img alt="" class="testimonial-img flex-shrink-0" src="assets/img/testimonials/testimonials-3.jpg">
+                    <div>
+                      <h3>Jena Karlis</h3>
+                      <h4>Store Owner</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p><i class="bi bi-quote quote-icon-left"></i> <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span> <i class="bi bi-quote quote-icon-right"></i></p>
+                </div>
+              </div><!-- End testimonial item -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="d-flex">
+                    <img alt="" class="testimonial-img flex-shrink-0" src="assets/img/testimonials/testimonials-4.jpg">
+                    <div>
+                      <h3>Matt Brandon</h3>
+                      <h4>Freelancer</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p><i class="bi bi-quote quote-icon-left"></i> <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span> <i class="bi bi-quote quote-icon-right"></i></p>
+                </div>
+              </div><!-- End testimonial item -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="d-flex">
+                    <img alt="" class="testimonial-img flex-shrink-0" src="assets/img/testimonials/testimonials-5.jpg">
+                    <div>
+                      <h3>John Larson</h3>
+                      <h4>Entrepreneur</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p><i class="bi bi-quote quote-icon-left"></i> <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span> <i class="bi bi-quote quote-icon-right"></i></p>
+                </div>
+              </div><!-- End testimonial item -->
             </div>
-  
+            <div class="swiper-pagination"></div>
           </div>
-  
         </div>
-  
-      </section><!-- /Testimonials Section -->
-    <section id="services" class="services section">
+      </div>
+    </div>
+  </section><!-- /Testimonials Section -->
 
-    
-        <div class="container">
-  
-          <div class="row gy-4">
-  
-            <div class="col-lg-12 col-md-6" >
-              <div class="service-item  position-relative">
-                <div class="icon">
-                  <i class="fas fa-heartbeat"></i>
-                </div>
-                <a href="#" class="stretched-link">
-                  <h3>Looking for Reliable Partner in your Pharma Business ?</h3>
-                </a>
-                <p>
-                    
-                    Contact us right away for Assured Quality in Third Party Manufacturing and the best pharmaceutical companies in India.</p>
-                    <a _ngcontent-ng-c1531600811="" style="margin-left:480px" href="#appointment" class="button cta-btn d-none d-sm-block">Download Price List</a>
-             
-              </div>
-              
-            </div><!-- End Service Item -->
-            
-          
-          </div>
-  
-        </div>
-  
-      </section><!-- /Services Section -->
-     
-      <section id="contact" class="contact section">
-
-        <!-- Section Title -->
-        <div class="container section-title">
-          <h2>Feel Free To Contact</h2>
-        </div><!-- End Section Title -->
-  
-        <div class="mb-5" >
-          
-        </div><!-- End Google Maps -->
-  
-        <div class="container" >
-  
-          <div class="row gy-4">
-  
-            <div class="col-lg-4">
-              <div class="info-item d-flex" >
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Phone:</h3>
-                  <p>
-                    +91 96508 19912
-                    +91 99361 13635</p>
-                </div>
-              </div><!-- End Info Item -->
-  
-              <div class="info-item d-flex" >
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Payama pharmaceuticals 
-                    Sector-112, Noida, India</p>
-                </div>
-              </div><!-- End Info Item -->
-  
-              <div class="info-item d-flex" >
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>payamapharma2023@gmail.com
-                    info@payamapharma.com</p>
-                </div>
-              </div><!-- End Info Item -->
-  
+  <section class="contact section" id="contact">
+    <!-- Section Title -->
+    <div class="container section-title">
+      <h2>Feel Free To Contact</h2>
+    </div><!-- End Section Title -->
+    <div class="mb-5"></div><!-- End Google Maps -->
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <div class="info-item d-flex">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h3>Phone:</h3>
+              <p>+91 96508 19912 +91 99361 13635</p>
             </div>
-  
-            <div class="col-lg-8">
-              <form  >
-                <div class="row gy-4">
-  
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
-  
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                  </div>
-  
-                  <div class="col-md-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                  </div>
-  
-                  <div class="col-md-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                  </div>
-  
-                  <div class="col-md-12 text-center">
-                    <!-- <div class="loading">Loading</div>
+          </div><!-- End Info Item -->
+          <div class="info-item d-flex">
+            <i class="bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Address</h3>
+              <p>Payama pharmaceuticals Sector-112, Noida, India</p>
+            </div>
+          </div><!-- End Info Item -->
+          <div class="info-item d-flex">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email Us</h3>
+              <p>payamapharma2023@gmail.com info@payamapharma.com</p>
+            </div>
+          </div><!-- End Info Item -->
+        </div>
+        <div class="col-lg-8">
+          <form>
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <input class="form-control" name="name" placeholder="Your Name" required="" type="text">
+              </div>
+              <div class="col-md-6">
+                <input class="form-control" name="email" placeholder="Your Email" required="" type="email">
+              </div>
+              <div class="col-md-12">
+                <input class="form-control" name="subject" placeholder="Subject" required="" type="text">
+              </div>
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" placeholder="Message" required="" rows="6"></textarea>
+              </div>
+              <div class="col-md-12 text-center">
+                <!-- <div class="loading">Loading</div>
                     <div class="error-message"></div>
                     <div class="sent-message">Your message has been sent. Thank you!</div> -->
-  
-                    <button class="button" type="submit">Send Message</button>
-                  </div>
-  
-                </div>
-              </form>
-            </div><!-- End Contact Form -->
-  
-          </div>
-  
-        </div>
-  
-      </section><!-- /Contact Section -->
-  
-  </main>
-
+                <button class="button" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div><!-- End Contact Form -->
+      </div>
+    </div>
+  </section><!-- /Contact Section -->
+</main>

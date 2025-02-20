@@ -45,15 +45,22 @@
     >
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- <li class="nav-item"><a class="nav-link" href="#home" [class.active]="activehash ==='#home'">Home<br></a></li>
+        <li class="nav-item"><a class="nav-link" href="#product" [class.active]="activehash ==='#product'">Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" [class.active]="activehash ==='#about'">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#vision" [class.active]="activehash ==='#vision'">Our Vision</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials" [class.active]="activehash ==='#testimonials'">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" routerLinkActive="active" [routerLink]="['/carrier']"  [class.active]="activehash==='carrier'" >Carrier</a></li>            
+        <li class="nav-item"><a class="nav-link" href="#contact" [class.active]="activehash ==='#contact'">Contact</a></li> -->
         
         <li class="nav-item"><a class="nav-link" [routerLink]="['/home']" fragment="home" [class.active]="activehash ==='home'">Home<br></a></li>
         <li class="nav-item"><a class="nav-link" [routerLink]="['/home']" fragment="product" [class.active]="activehash==='product'">Product</a></li>
         <li class="nav-item"><a class="nav-link" [routerLink]="['/home']" fragment="about" [class.active]="activehash==='about'">About</a></li>
         <li class="nav-item"><a class="nav-link" [routerLink]="['/home']" fragment="vision" [class.active]="activehash==='vision'">OurVision</a></li>
         <li class="nav-item"><a class="nav-link" [routerLink]="['/home']" fragment="testimonials" [class.active]="activehash==='testimonials'">Testimonials</a></li>
-        <li><a class="nav-link" [routerLink]="['/carrier']"  [class.active]="activehash==='carrier'" >Carrier</a></li>           
-        <li><a class="nav-link" [routerLink]="['/home']" fragment="contact" [class.active]="activehash==='contact'" >Contact</a></li>
-        <li class="nav-item">
+        <li><a class="nav-link" routerLinkActive="active" [routerLink]="['/carrier']"  [class.active]="activehash==='carrier'" >Carrier</a></li>           
+        <li><a class="nav-link" [routerLink]="['/home']" fragment="contact" [class.active]="activehash==='contact'" >Contact</a></li> 
+        <!-- <li class="nav-item">
           <a class="nav-link position-relative pointer" (click)="cartDetails()">
             <i class="fas fa-shopping-cart"></i>
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -62,9 +69,9 @@
           </a>
         </li>
       </ul>
-      <!-- Left links -->
+      <! Left links -->
 
-    
+    </ul>
     </div>
     <!-- Collapsible wrapper -->
   </div>

@@ -46,11 +46,13 @@ export class HeaderComponent implements OnInit{
   cartDetails(){
     this.router.navigate(['/cart-details'])
   }
+
+  
   ngAfterViewInit(){
     this.route.fragment.subscribe((fragment =>{
       if (fragment){
         this.activehash = fragment
-        document.getElementById(fragment)?.scrollIntoView({behavior:'smooth'})
+        document.getElementById(fragment)?.scrollIntoView({behavior:'smooth', block: 'start'})
       }
     }))
   }
