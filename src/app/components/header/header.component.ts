@@ -54,6 +54,9 @@ export class HeaderComponent implements OnInit{
         this.activehash = fragment
         document.getElementById(fragment)?.scrollIntoView({behavior:'smooth', block: 'start'})
       }
+      else{
+        this.activehash = '#home'
+      }
     }))
   }
   
