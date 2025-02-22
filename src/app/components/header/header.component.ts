@@ -9,6 +9,8 @@ import { CartService } from 'src/app/service/cart.service';
 })
 export class HeaderComponent implements OnInit{
   activehash: string ='';
+  isMenuOpen = false;
+
 
   @HostListener('window:scroll', [])
   // onWindowScroll() {
@@ -58,6 +60,18 @@ export class HeaderComponent implements OnInit{
         this.activehash = '#home'
       }
     }))
+  }
+  toggleMobileMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    const navMenu = document.getElementById('navmenu');
+    if (navMenu) {
+      console.log(this.isMenuOpen)
+      if (this.isMenuOpen) {
+        navMenu.classList.add('open');
+      } else {
+        navMenu.classList.remove('open');
+      }
+    }
   }
   
 }

@@ -1,12 +1,23 @@
-.pointer{
-    cursor: pointer;
+@media (max-width: 1200px) and (min-width: 990px) {
+    .navbar-collapse {
+      display: flex !important;  /* Force navbar visibility */
+    }
+  }
+
+  .offcanvas.offcanvas-top {
+    height: auto !important;
+    margin:20px
+
+  }
+  @media (max-width: 1199px) {
+    .mobile-nav-active .navbar-nav {
+        position: fixed;
+        overflow: hidden;
+        inset: 0;
+        background: rgba(33, 37, 41, 0.8);
+        transition: 0.3s;
+    }
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-    color:#1977cc !important
-}
-.navbar-toggler{
-position: absolute;
-right: 10px;
-top: 5px;
-
+    color:blue
 }

@@ -1,62 +1,3 @@
-<style>
-  /* Responsive Navbar */
-  .header {
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 16px;
-    font-weight: 500;
-    color: #333;
-    padding: 10px 15px;
-  }
-
-  .navbar-nav .nav-link:hover {
-    color: #007bff;
-  }
-
-  /* Responsive WhatsApp Floating Button */
-  .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-  }
-
-  .whatsapp-float img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .whatsapp-float img:hover {
-    transform: scale(1.1);
-  }
-
-  /* Mobile Navbar Styles */
-  @media (max-width: 991px) {
-    .navbar-nav {
-      text-align: center;
-    }
-
-    .whatsapp-float {
-      bottom: 15px;
-      right: 15px;
-    }
-
-    .whatsapp-float img {
-      width: 50px;
-      height: 50px;
-    }
-  }
-</style>
-
-<!-- Bootstrap Script (Required for Navbar Toggle) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <header id="header" class="header sticky-top">
 <div class="topbar d-flex align-items-center">
@@ -75,7 +16,7 @@
 </div><!-- End Top Bar -->
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar branding d-flex align-items-center navbar-expand-lg navmenu navbar-light bg-light">
   <!-- Container wrapper -->
    
   <div class="container position-relative d-flex align-items-center justify-content-between">
@@ -86,32 +27,17 @@
       <!-- <h1 class="sitename">Payama</h1> -->
     </a>
     <!-- Toggle button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      (click)="basicNavbar.toggle()"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
+    <!-- Mobile Toggle Button (Visible only on Mobile) -->
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
+    aria-controls="mobileNav" aria-label="Toggle navigation">
+    <i class="bi bi-list"></i> <!-- Bootstrap icon -->
+  </button>
 
     <!-- Collapsible wrapper -->
-    <div
-      class="collapse navbar-collapse"
-      id="navbarSupportedContent"
-      mdbCollapse
-      #basicNavbar="mdbCollapse"
-    >
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <!-- <li class="nav-item"><a class="nav-link" href="#home" [class.active]="activehash ==='#home'">Home<br></a></li>
-        <li class="nav-item"><a class="nav-link" href="#product" [class.active]="activehash ==='#product'">Product</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about" [class.active]="activehash ==='#about'">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#vision" [class.active]="activehash ==='#vision'">Our Vision</a></li>
-        <li class="nav-item"><a class="nav-link" href="#testimonials" [class.active]="activehash ==='#testimonials'">Testimonials</a></li>
-        <li class="nav-item"><a class="nav-link" routerLinkActive="active" [routerLink]="['/carrier']"  [class.active]="activehash==='carrier'" >Carrier</a></li>            
-        <li class="nav-item"><a class="nav-link" href="#contact" [class.active]="activehash ==='#contact'">Contact</a></li> -->
+     <!-- Normal Navbar (Visible on Large Screens) -->
+     <div class="collapse navbar-collapse  d-lg-flex" id="navbarNav">
+      <ul class="navbar-nav ms-auto ">
+        
         
         <li class="nav-item"><a class="nav-link" [routerLink]="['/home']" fragment="home" [class.active]="activehash ==='home'">Home<br></a></li>
         <li class="nav-item"><a class="nav-link" [routerLink]="['/home']" fragment="product" [class.active]="activehash==='product'">Product</a></li>
@@ -133,7 +59,24 @@
 
     </ul>
     </div>
-    <!-- Collapsible wrapper -->
+     <!-- Offcanvas Navigation (Opens from Top on Mobile) -->
+     <div class="offcanvas offcanvas-top  d-lg-none" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+      
+      <div class="offcanvas-body">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <ul class="navbar-nav text-center">
+          <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close"><a class="nav-link" [routerLink]="['/home']" fragment="home" [class.active]="activehash ==='home'" >Home<br></a></li>
+          <li class="nav-item"  data-bs-dismiss="offcanvas" aria-label="Close"><a class="nav-link" [routerLink]="['/home']" fragment="product" [class.active]="activehash==='product'">Product</a></li>
+          <li class="nav-item"  data-bs-dismiss="offcanvas" aria-label="Close"><a class="nav-link" [routerLink]="['/home']" fragment="about" [class.active]="activehash==='about'">About</a></li>
+          <li class="nav-item"  data-bs-dismiss="offcanvas" aria-label="Close"><a class="nav-link" [routerLink]="['/home']" fragment="vision" [class.active]="activehash==='vision'">OurVision</a></li>
+          <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close"><a class="nav-link" [routerLink]="['/home']" fragment="testimonials" [class.active]="activehash==='testimonials'" >Testimonials</a></li>
+          <li><a class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close" routerLinkActive="active" [routerLink]="['/carrier']"  [class.active]="activehash==='carrier'" >Carrier</a></li>           
+          <li><a class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close" [routerLink]="['/home']" fragment="contact" [class.active]="activehash==='contact'"  >Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
   <!-- Container wrapper -->
 </nav>
